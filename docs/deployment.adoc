@@ -1,0 +1,3 @@
+== Deployment & Hosting
+
+Deployment is handled by Azure DevOps on every push to the master branch. It builds a Docker image that is pushed to a container registry on Azure, which triggers a webhook notifying an App Service running the image to restart with the newly created image.

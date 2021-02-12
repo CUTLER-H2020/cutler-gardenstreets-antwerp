@@ -1,0 +1,20 @@
+== Environment Variables
+
+=== Backend
+
+Here are the steps to follow when adding a new enviroment variable for the backend server:
+
+- Adapt frontend/.env.template
+- Adapt frontend/.env
+- Adapt the configuration of the Azure App Service
+
+=== Frontend
+
+Here are the steps to follow when adding a new enviroment variable for the React application:
+
+- Adapt frontend/.env.template
+- Adapt frontend/.env
+- Adapt the Azure key vault
+- Adapt the Azure DevOps variable group (in Cutler/Pipelines/Library)
+- Adapt azure-pipelines.yml
+- Adapt Dockerfile

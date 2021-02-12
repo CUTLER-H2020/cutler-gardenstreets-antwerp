@@ -1,0 +1,19 @@
+== Frontend
+
+=== Mapbox Style
+
+Any Mapbox style can be used but if you want to allow interactivity and let the user select which information layers to visualise over the map you need to add them in you map style in Mapbox Studio by using Vector tilesets. The Vector tilesets that we use are generated from the private shapefiles.
+
+In Mapbox Studio, you will have to pay attention to the naming of the layers so that the correct units appear in the legends and you will need to group layers appropriately so that they appear in the same layer selection dropdown (see `frontend/src/stateContainers/mapStyle.ts`).
+
+Lastly, icons for the garden streets and the markers will need to be added to the style sprites.
+
+=== Local development
+
+Running the web application
+
+    nvm use
+    cd frontend
+    cp .env.template .env # and fill in the values
+    yarn install
+    yarn start

@@ -1,0 +1,20 @@
+== Backend
+
+=== Setup & Seeding
+
+Before running the backend server, you should ensure a PostGIS database is available and properly setup. Here are the steps to properly setup the database:
+
+. run `setup/database/init.sh`
+. run `setup/database/create_garden_streets_table.sql`
+. run `setup/database/create_markers_table.sql`
+. run `setup/database/profits_algorithm_helpers.sql`
+. run `setup/database/load.sh` to load the hydrological catchments shapefile
+. (optional) adapt and run `setup/database/fix_hydrological_catchments.sql` if you encounter issues when creating new garden streets through the api
+
+=== Local development
+
+    nvm use
+    cd server
+    cp .env.template .env # and fill in the values
+    yarn install
+    yarn run dev

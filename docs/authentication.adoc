@@ -1,0 +1,3 @@
+== Authentication
+
+Authentication is handled via Firebase using the email address and password mechanism. Not anyone can sign up to use the application, users should be granted access by manually adding them to the whitelist in the Authentication tab of the Firebase console.

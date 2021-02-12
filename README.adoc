@@ -1,0 +1,21 @@
+== Cutler Antwerp - Garden Streets Administration Tool
+
+The garden streets administration tool is a tool that allows the policy maker to experiment and test potential locations for garden streets by drawing shapes on a map and receive immediate feedback on how profitable such locations and shapes would be. In order to guide its decisions, the policy maker can select information layers to visualise on the map, such as flooding risks/depths, benefits of the location based on the hydrological catchment, but also economical like average rent prices in the neighbourhood, just to name a few.
+
+The application is running https://cutler-app.azurewebsites.net/[here]. You can also find screenshots link:docs/images[here].
+
+=== OpenSourcing
+
+Although this repository has been opensourced, access to the administration tool and to the required shapefiles is still restricted to IMEC staff.
+
+=== Repository Structure
+
+This repository contains code for a web application (/frontend) and a backend API (/server).
+
+The web application is a React app bootstrapped from create-react-app and the backend is a Node.js Koa application. The backend is a server running the CRUD api for the garden streets administration, communicating with a PostGIS database, and also bears the additional responsibility of serving the React bundle in the production environment.
+
+See link:docs/frontend.adoc[frontend] and link:docs/backend.adoc[backend] for more documentation.
+
+=== Shapefiles
+
+In order to function properly, the project needs several shapefiles. They are located in the private IMEC Cutler Sharepoint.
