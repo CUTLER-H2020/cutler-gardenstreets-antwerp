@@ -22,4 +22,4 @@ In order to function properly, the project needs several shapefiles. They are lo
 
 === Acknowledge
 
-This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 770469.
+**This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 770469.**
